@@ -1,0 +1,67 @@
+# Game Development Pipeline and Initial Setup
+
+## 1. Oyun Fikrini Belirle
+- Basit Başla: İlk oyun projende basit bir fikir seç.
+- Doküman Hazırla: Bir Game Design Document (GDD) oluştur.
+
+## 2. Geliştirme Araçlarını Seç
+- Oyun Motoru: Unity veya Unreal Engine gibi popüler bir oyun motoru kullan.
+- Versiyon Kontrol: Git gibi bir versiyon kontrol sistemi kullan.
+
+## 3. Temel Mekanikleri Geliştirme
+- Prototip Oluştur: Temel oyun mekaniğini prototip olarak oluştur.
+- Kod Yazma: Bildiğin programlama dillerini ve oyun motorunun sunduğu API'leri kullanarak kod yaz.
+
+## 4. Görseller ve Animasyonlar
+- Yer Tutucu Grafikleri Kullan: Basit yer tutucu grafikleri kullanarak başla.
+- Grafikleri Oluştur: Adobe Illustrator kullanarak basit 2D grafikler oluştur veya çevrimiçi kaynaklardan ücretsiz grafikler bul.
+
+## 5. Ses ve Müzik
+- Ses Efektleri: Basit ses efektleri kaydet ve Adobe Audition ile düzenle.
+- Müzik: Basit bir arka plan müziği oluştur veya ücretsiz müzik kaynaklarından faydalan.
+
+## 6. Test ve İyileştirme
+- Oynanabilirlik Testi: Oyunu oyna ve temel mekaniklerin düzgün çalıştığından emin ol.
+- Geri Bildirim: Yakın çevrenden oyunu test etmelerini iste ve geri bildirim al.
+- Hata Düzeltme: Geri bildirimler ve test sonuçlarına göre hataları düzelt ve oyunu iyileştir.
+
+## 7. Final Dokunuşları ve Yayınlama
+- Son Düzenlemeler: Grafik, ses ve oynanıştaki son detayları gözden geçir.
+- Paketleme: Oyunu hedef platform için paketle.
+- Yayınlama: itch.io veya GameJolt gibi platformlarda yayınlayabilirsin.
+
+# Git ve GitHub Kurulumu ve Kullanımı
+
+## Sourcetree Kullanarak GitHub Projesi Oluşturma
+
+### Adım 1: GitHub Hesabı Oluşturma veya Giriş Yapma
+1. GitHub web sitesine (https://github.com) gidin ve bir hesap oluşturun veya mevcut hesabınıza giriş yapın.
+
+### Adım 2: Yeni Bir Depo (Repository) Oluşturma
+1. GitHub'da oturum açtıktan sonra, sağ üst köşedeki '+' işaretine tıklayın ve 'New repository' seçeneğini seçin.
+2. Depo adını girin (örneğin, 'my-game-project') ve diğer gerekli bilgileri doldurun.
+3. 'Create repository' butonuna tıklayın.
+
+### Adım 3: Sourcetree'de Depo Klonlama
+1. Sourcetree'yi açın.
+2. 'New' butonuna tıklayın ve 'Clone from URL' seçeneğini seçin.
+3. GitHub'da oluşturduğunuz depo sayfasında, URL'yi kopyalayın (örneğin, `https://github.com/kullanici-adi/my-game-project.git`).
+4. Sourcetree'de URL'yi yapıştırın ve yerel bir klasör seçin.
+5. 'Clone' butonuna tıklayın.
+
+# GitHub Desktop Kullanarak Proje Yönetimi
+
+## Adım 1: GitHub Desktop Kurulumu
+1. GitHub Desktop'ı indirin ve kurun: [GitHub Desktop İndir](https://desktop.github.com/)
+2. Programı açın ve GitHub hesabınızla giriş yapın.
+
+## Adım 2: Yeni Bir Depo Oluşturma veya Mevcut Depoyu Klonlama
+1. GitHub Desktop'ı açın.
+2. Üst menüden 'File' > 'New Repository' seçeneğini seçin.
+3. Depo adını ve konumunu belirleyin, ardından 'Create repository' butonuna tıklayın.
+4. Alternatif olarak, GitHub web sitesinden depo oluşturup URL'yi kopyalayın ve GitHub Desktop'ta 'Clone a repository from the Internet' seçeneği ile klonlayın.
+
+## Adım 3: Kod ve Dosyaları Yükleme
+1. Depoyu oluşturduktan veya klonladıktan sonra, dosyalarınızı yerel klasöre ekleyin (örneğin, GDD dokümanınızı, oyun kaynak dosyalarınızı vb.).
+2. GitHub Desktop'ta yapılan değişiklikleri göreceksiniz. 'Commit to main' alanına değişikliklerinizi özetleyen bir mesaj yazın ve 'Commit' butonuna tıklayın.
+3. Değişikliklerinizi GitHub'a yüklemek için sağ üst köşedeki 'Push origin' butonuna tıklayın.
