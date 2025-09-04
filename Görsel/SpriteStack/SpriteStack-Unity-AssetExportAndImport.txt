@@ -1,0 +1,24 @@
+📄 Sprite-Stack Worklow Belgelendirmesi
+Aşağıda, SpriteStack ile oluşturduğun piramit modelini Unity’de 2.5D sahne olarak nasıl çalıştırdığını adım adım dökümante ettim. Kaydedip üstüne geliştirmeler yapabilirsin:
+
+Adım	Açıklama
+1. SpriteStack’te Piramit Hazırlama	
+Basit piramit veya voxel model oluştur. - “Export” menüsünden Slices veya Spritesheet formatında PNG olarak dışa aktar.
+
+2. Unity Projesi Hazırlama	
+Unity 3D proje oluştur. - Eğer 2D modda başladıysan Package Manager’dan 2D Sprite paketini yükle. (*2019.4.16 LTS’de test edildi)
+
+3. PNG Dosyalarını Unity’ye İçe Aktarma	
+Assets içine export edilen PNG’leri kopyala. <br> - Inspector’da: Texture Type = Sprite (2D and UI), Sprite Mode = Multiple (spritesheet için), Filter Mode = Point, Compression = None
+
+4. Sprite Sheet’i Dilimleme (Slice)	- Sprite Editor’ü aç (paket yüklüyse aktif olur).
+- Slice → Grid by Cell Count ile kareleri ayır, ardından “Apply” tuşla 
+
+5. Slice’ları Sahneye Yerleştirme	- Hierarchy’de her slice için 2D Object → Sprite oluştur.
+- İlgili SpriteRenderer a ata ve Z ekseninde küçük ofset değerleriyle (örr: 0, –0.01, –0.02…) katman sıralaması yap.
+
+6. Kamera Ayarı	- Main Camera’yı seç ve Inspector’da “Projection = Orthographic” yap.
+- Rotasyon ile tepe veya eğimli bakış ayarla (örneğin X=90° ya da X=45°).
+
+7. Son Kontrol & Görünüm	- Sahne görünümünde stack'lenmiş bir piramit elde etmiş olmalısın.
+- Gerekirse sprite outline, Shadow veya shader’larla görüntüyü güçlendirebilirsin.cc
